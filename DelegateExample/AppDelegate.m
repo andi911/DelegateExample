@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
+
 
 @end
 
@@ -16,8 +17,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //创建window
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    //navCtrl.preferredStatusBarStyle = UIStatusBarStyleDefault;
+    
+    self.window.rootViewController = navCtrl;
+    
+    //设置window为主窗口并显示出来
+    [self.window makeKeyAndVisible];
+    
     return YES;
+
 }
 
 

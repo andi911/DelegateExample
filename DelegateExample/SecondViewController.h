@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CLYSendNameDelegate.h"
 @interface SecondViewController : UIViewController
+
+@property (nonatomic, weak) id<CLYSendNameDelegate> sendNameDelegate;
 
 @end

@@ -60,6 +60,7 @@
 		2E3708161FAAF4A4002E772E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		2E3708171FAAF4A4002E772E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		2E37081B1FAAF83D002E772E /* CLYSendNameDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLYSendNameDelegate.h; sourceTree = "<group>"; };
+		2E3C17421FAB2176004F2357 /* CLYSendTestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLYSendTestDelegate.h; sourceTree = "<group>"; };
 		44B83C766C6E4C6047DC0287 /* Pods-DelegateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelegateExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DelegateExample/Pods-DelegateExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E142AEB03A7CCA12E61A561D /* Pods-DelegateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelegateExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DelegateExample/Pods-DelegateExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +133,7 @@
 				2E3708161FAAF4A4002E772E /* SecondViewController.h */,
 				2E3708171FAAF4A4002E772E /* SecondViewController.m */,
 				2E37081B1FAAF83D002E772E /* CLYSendNameDelegate.h */,
+				2E3C17421FAB2176004F2357 /* CLYSendTestDelegate.h */,
 				2E3707E71FAAE727002E772E /* Main.storyboard */,
 				2E3707EA1FAAE727002E772E /* Assets.xcassets */,
 				2E3707EC1FAAE727002E772E /* LaunchScreen.storyboard */,

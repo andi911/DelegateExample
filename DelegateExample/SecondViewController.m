@@ -25,6 +25,11 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    if ([self.sendNameDelegate respondsToSelector:@selector(showPersonName:)]) {
+        int x = arc4random() % 100;
+        NSString *name = [[NSString alloc]initWithFormat:@"成良雨%d",x];
+        [self.sendNameDelegate showPersonName:name];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

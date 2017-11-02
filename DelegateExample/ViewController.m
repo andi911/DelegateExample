@@ -8,9 +8,8 @@
 
 #import "ViewController.h"
 #import "UIView+LayoutMethods.h"
-
-
-@interface ViewController ()
+#import "SecondViewController.h"
+@interface ViewController ()<CLYSendNameDelegate>
 //
 @property(nonatomic,strong)UILabel *nameLabel;
 //
@@ -35,6 +34,7 @@
 #pragma mark ==== UI ====
 - (void)setUpUI{
     [self.view addSubview:self.nameLabel];
+    [self.view addSubview:self.tapBtn];
 }
 
 
@@ -42,10 +42,22 @@
 
 #pragma mark ==== action ====
 - (void)tapBtnAction{
-    
+    SecondViewController *vc = [[SecondViewController alloc]init];
+    vc.sendNameDelegate = self;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark ==== action ====
+
+#pragma mark ==== delegate ====
+
+- (void)showPersonName:(NSString *)name{
+    self.nameLabel.text = name;
+}
+
+
+#pragma mark ==== delegate ====
+
 
 
 -(UIButton*)tapBtn{
@@ -67,7 +79,7 @@
         _nameLabel = [[UILabel alloc]init];
         _nameLabel.width = 100;
         _nameLabel.height = 16;
-        _nameLabel.center = CGPointMake(self.view.frame.size.width/2, 100/2);
+        _nameLabel.center = CGPointMake(self.view.frame.size.width/2, 200/2);
     }
     return _nameLabel;
 }
